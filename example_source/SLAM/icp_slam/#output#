@@ -1,0 +1,118 @@
+Create Sick Driver...
+ icp-slam version 0.1 - Part of the MRPT
+ MRPT C++ Library: MRPT 0.7.1  svn:익스포트됨 - BUILD DATE Sep 23 2009
+-------------------------------------------------------------------
+Running with the following parameters:
+ RAWLOG file:'dataset1.rawlog'
+ Output directory:			'LOG_ICP-SLAM'
+ matchAgainstTheGrid:			Y
+ Log record freq:			50
+  SAVE_3D_SCENE:			Y
+  SAVE_POSE_LOG:			N
+  CAMERA_3DSCENE_FOLLOWS_ROBOT:	Y
+
+====================================================================
+
+             Set of internal maps for 'CMultiMetricMap' object
+
+====================================================================
+likelihoodMapSelection                  = -1 (Fuse from all maps)
+enableInsertion_pointsMap               = true
+enableInsertion_landmarksMap            = true
+enableInsertion_beaconMap               = true
+enableInsertion_gridMaps                = true
+enableInsertion_gasGridMaps             = true
+enableInsertion_heightMaps              = true
+Showing next the 2 internal maps:
+
+------------------------- Internal map 1 out of 2 --------------------------
+                 C++ Class: 'COccupancyGridMap2D'
+m_disableSaveAs3DObject                 = false
+resolution                              = 0.040
+min_x                                   = -10.000
+max_x                                   = 10.000
+min_y                                   = -10.000
+max_y                                   = 10.000
+
+----------- [COccupancyGridMap2D::TInsertionOptions] ------------ 
+
+mapAltitude                              = 0.000000
+maxDistanceInsertion                     = 25.000000
+maxOccupancyUpdateCertainty              = 0.600000
+useMapAltitude                           = NO
+considerInvalidRangesAsFreeSpace         = YES
+decimation                               = 1
+horizontalTolerance                      = 0.000000
+CFD_features_gaussian_size               = 1.000000
+CFD_features_median_size                 = 3.000000
+wideningBeamsWithDistance                = NO
+
+
+----------- [COccupancyGridMap2D::TLikelihoodOptions] ------------ 
+
+likelihoodMethod                        = lmLikelihoodField_Thrun
+enableLikelihoodCache                   = Y
+LF_stdHit                               = 0.350000
+LF_zHit                                 = 0.950000
+LF_zRandom                              = 0.050000
+LF_maxRange                             = 81.000000
+LF_decimation                           = 5
+LF_maxCorrsDistance                     = 0.300000
+LF_alternateAverageMethod               = N
+MI_exponent                             = 2.500000
+MI_skip_rays                            = 10
+MI_ratio_max_distance                   = 1.500000
+rayTracing_useDistanceFilter            = Y
+rayTracing_decimation                   = 10
+rayTracing_stdHit                       = 1.000000
+consensus_takeEachRange                 = 1
+consensus_pow                           = 5.00
+OWA_weights   = [0.010 0.010 0.010  ... 0.010 0.010 ] (size=100)
+
+------------------------- Internal map 2 out of 2 --------------------------
+                 C++ Class: 'CSimplePointsMap'
+m_disableSaveAs3DObject                 = false
+
+----------- [CPointsMap::TInsertionOptions] ------------ 
+
+minDistBetweenLaserPoints               = 0.050000
+addToExistingPointsMap                  = Y
+also_interpolate                        = N
+disableDeletion                         = Y
+fuseWithExisting                        = Y
+isPlanarMap                             = Y
+horizontalTolerance                     = 0.000000
+matchStaticPointsOnly                   = N
+maxDistForInterpolatePoints             = 2.000000
+
+
+----------- [CICP::TConfigParams] ------------ 
+
+ICP_algorithm                           = icpClassic
+maxIterations                           = 60
+thresholdDist                           = 0.300000
+thresholdAng                            = 5.000000 deg
+ALFA                                    = 0.500000
+smallestThresholdDist                   = 0.100000
+onlyClosestCorrespondences              = Y
+onlyUniqueRobust                        = N
+covariance_varPoints                    = 0.000400
+doRANSAC                                = N
+ransac_minSetSize                       = 3
+ransac_maxSetSize                       = 20
+ransac_mahalanobisDistanceThreshold     = 3.000000
+ransac_nSimulations                     = 100
+ransac_fuseByCorrsMatch                 = Y
+ransac_fuseMaxDiffXY                    = 0.010000
+ransac_fuseMaxDiffPhi                   = 0.100000 deg
+normalizationStd                        = 0.020000
+kernel_rho                              = 0.070000
+use_kernel                              = Y
+Axy_aprox_derivatives                   = 0.050000
+LM_initial_lambda                       = 0.000100
+
+Receive From Sensor
+[init Laser start....]
+Start Sick Driver...
+PORT : /dev/ttyUSB1 range_mode : 16
+fd is 12
