@@ -1,0 +1,24 @@
+Description
+		This program is python wrapper program for NI USB-6211
+		Original source is based on DAQmx ANSI C library and especially refer to VoltUpdate.c Cnt-Buf-Cont-ExtClk.c
+		The program consist of following files
+
+		NIDeviceWrapper.c
+		setup.py
+		NIDAQmx.h		This file needs to copy to compile path
+		NIDAQmx.lib		This file needs to copy to compile path
+		test_code.py	Test code
+
+Instruction for install
+		python setup.py install
+
+Instruction for Running
+		1. run the python
+		2. import NIDeviceWrapper
+		3. NIDeviceWrapper.initDevice()
+		4. NIDeviceWrapper.updateVolages(Double left, Double right) or NIDeviceWrapper.countLeftEncoderTic()
+
+Extra information
+	  	OS : Windows XP
+		Python : 2.6.2
+		C Compiler : Visual studio 9
