@@ -360,6 +360,7 @@ class PANTILT_UNIT_Controller(AbstractController) :
 		self.dxl.setPosition(id, position, DXL_SPEED)
 
 	def sendMsg(self, msg) :
+		
 		if self.isConnected :
 			if msg[0] == 'HOKUYO' :
 				self.sendToDxl(HOKUYO_ID, msg[1])
